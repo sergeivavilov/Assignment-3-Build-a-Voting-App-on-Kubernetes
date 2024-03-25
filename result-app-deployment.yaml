@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: result-app
+  labels:
+    app: result-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: result-app
+  template:
+    metadata:
+      labels:
+        app: result-app
+    spec:
+      containers:
+      - name: result-app
+        image: 312bc/result-app:1.0
+        ports:
+        - containerPort: 80
