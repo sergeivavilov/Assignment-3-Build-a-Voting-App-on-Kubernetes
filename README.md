@@ -84,4 +84,9 @@ Below are the steps involved in setting up the environment and deploying the Vot
 37. kubectl apply -f result-app-service.yaml    # Apply the result app service
 38. kubectl get deployments          # List deployments to check status
 39. kubectl get services             # List services to check status
-40. history                          # View command history
+40. history                          # View command 
+
+Access the applications:
+
+Voting App: http://18.221.95.100:30000
+Result App: http://18.221.95.100:30001
