@@ -41,3 +41,43 @@ Assignment #3: Build a Voting App on Kubernetes
 Voting App: http://18.221.95.100:30000
 Result App: http://18.221.95.100:30001
 
+
+
+
+
+Set-Alias -Name k -Value kubectl
+alias k='kubectl'
+source ~/.bashrc
+k version
+nano ~/.bashrc
+vi voting-app-deployment.yaml
+k apply -f voting-app-deployment.yaml
+vi voting-app-service.yaml
+kubectl apply -f voting-app-service.yaml
+k get deployments
+kubectl get services
+vi redis-deployment.yaml
+kubectl apply -f redis-deployment.yaml
+vi redis-service.yaml
+kubectl apply -f redis-service.yaml
+kubectl get deployments
+kubectl get services
+vi worker-deployment.yaml
+kubectl apply -f worker-deployment.yaml
+vi worker-service.yaml
+kubectl apply -f worker-service.yaml
+kubectl get deployments
+kubectl get services
+vi db-deployment.yaml
+kubectl apply -f db-deployment.yaml
+vi db-service.yaml
+kubectl apply -f db-service.yaml
+kubectl get deployments
+kubectl get services
+vi result-app-deployment.yaml
+kubectl apply -f result-app-deployment.yaml
+vi result-app-service.yaml
+kubectl apply -f result-app-service.yaml
+kubectl get deployments
+kubectl get services
+history
