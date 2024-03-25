@@ -38,3 +38,5 @@ Assignment #3: Build a Voting App on Kubernetes
    38  kubectl get deployments
    39  kubectl get services
    40  history
+Voting App: http://18.221.95.100:30000
+Result App: http://18.221.95.100:30001
